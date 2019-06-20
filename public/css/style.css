@@ -1,0 +1,201 @@
+*{
+	font-family: 'Source Code Pro', monospace;
+}
+
+#map {
+	height: 100%;
+}
+
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#contenedor{
+	z-index: 10;
+	position: absolute;
+	top: 19px;
+	left: -1px;
+}
+#slcUbi{
+	z-index: 10;
+	position: absolute;
+	top: 19px;
+	left: -1px;
+}
+
+#slcUb{
+	height: 100%;
+}
+
+#txtLinea{
+	z-index: 10;
+	position: absolute;
+	top: 19px;
+	left: 120px;
+}
+
+input[type='text']{
+	width: 40px;
+	height: 100%;
+}
+
+select, option {
+	-webkit-appearance: none;
+}
+
+.select-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.select-wrapper:after {
+    content: '\0025BC';
+    font: normal normal normal 12px/1 FontAwesome;
+    color: white;
+    right: 14px;
+    top: 4px;
+    height: 26px;
+    padding: 15px 0px 0px 8px;
+    position: absolute;
+    pointer-events: none;
+}
+
+p,
+input,
+select,
+option,
+button {
+    font-family: Arial, ArialHebrew, sans-serif;
+    font-size: x-large;
+    text-align: center;
+    color: #FFF;
+    margin: 1vh;
+    padding: 1vh;
+}
+
+input,
+select,
+option,
+button {
+    background-color: #333;
+    border-radius: 1vh;
+    border-color: transparent;
+}
+select {
+  padding-right: 24px;
+}
+
+/* TERMINOS DE USO GOOGLE */
+.gmnoprint a, .gmnoprint span {
+    display:none;
+}
+
+/* GOOGLE LOGO */
+img[src="https://maps.gstatic.com/mapfiles/api-3/images/google4_hdpi.png"]{
+	display:none !important;
+}
+
+
+/* -------------- LOADER ---------------- */
+.loader{
+	background-color: black;
+	position: absolute;
+	z-index: 199;
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader span{
+    color: white;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.lds-roller {
+  width: 64px;
+  height: 64px;
+  z-index: 200;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 32px 32px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  margin: -3px 0 0 -3px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 50px;
+  left: 50px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 54px;
+  left: 45px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 57px;
+  left: 39px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 58px;
+  left: 32px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 57px;
+  left: 25px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 54px;
+  left: 19px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 50px;
+  left: 14px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 45px;
+  left: 10px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

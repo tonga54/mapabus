@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mapa bus</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="apple-touch-icon-precomposed" href="img/favicon_smartphones.png">
+	
+  </head>
+  <body>
+  	<div class="loader">
+	  	<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+	  	<span>Cargando...</span>
+	</div>
+  	<div id="contenedor">
+  		<!-- <div id="slcUbi" class="select-wrapper"> -->
+	    	<select id="slcUb">
+	    		<option value="Ida">Ida</option>
+	    		<option value="Vuelta">Vuelta</option>
+	    	</select>	
+	    <!-- </div> -->
+	    <!-- <div id="txtLinea"> -->
+	    	<input type="text" value="300" readonly="true">
+	    <!-- </div>	 -->
+  	</div>
+    <div id="map"></div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/data.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7VIeXjac7grEh0pzuMlszzFV2BGwFVG8&callback=initMap" async defer></script>
+
+  </body>
+</html>

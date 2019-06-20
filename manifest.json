@@ -1,0 +1,15 @@
+{
+    "background_color": "white",
+    "description": "Ver donde se encuentra tu omnibus",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "public/img/favicon_smartphones.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "name": "Mapa bus",
+    "short_name": "Mapa bus",
+    "start_url": "/"
+  }
